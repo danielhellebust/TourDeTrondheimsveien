@@ -92,7 +92,7 @@ app.layout = html.Div([
     dl.Map(
     children=polyline_list,
     id="map",
-    style={'width': '375px', 'height': '460px', 'margin': "auto", "display": "block"},
+    style={'width': '375px', 'height': '461px', 'margin': "auto", "display": "block"},
     center=[59.9351816485413,10.780315299805943],
     zoom=18
 
