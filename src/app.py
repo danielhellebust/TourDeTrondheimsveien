@@ -69,22 +69,6 @@ original_pub = ["Rendevous Kro",
                  "Hersleb Grill og Bar AS",
                  "Schouskjelleren Mikrobryggeri"]
 
-# live_pub = ["Rendevous Kro",
-#                  "Li Li's",
-#                  "Wings Bar",
-#                  "Pizzeria Valentino",
-#                  "Bella Notte",
-#                  "Szechuan Chengdu",
-#                  "Perla",
-#                  "Pane & Vino",
-#                  "Ocean Cafe & Bar",
-#                  "Konoji",
-#                  "Gråbein Bar",
-#                  "Ludus Cafe & sportsbar",
-#                  "Hersleb Grill og Bar AS",
-#                  "Schouskjelleren Mikrobryggeri"]
-
-
 polyline_list = []
 file_name = 'TdT.gpx'
 df, points = process_gpx_to_df(file_name)
@@ -102,7 +86,7 @@ for pub in original_pub:
 app = dash.Dash(external_stylesheets=['https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
                                       dbc.themes.BOOTSTRAP],
                 prevent_initial_callbacks=False)
-
+server = app.server
 
 app.layout = html.Div([
     dl.Map(
