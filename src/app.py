@@ -89,10 +89,11 @@ app = dash.Dash(external_stylesheets=['https://maxcdn.bootstrapcdn.com/font-awes
 server = app.server
 
 app.layout = html.Div([
+
     dl.Map(
     children=polyline_list,
     id="map",
-    style={'width': '375px', 'height': '461px', 'margin': "auto", "display": "block"},
+    style={'width': '375px', 'height': '440px', 'margin': "auto", "display": "block"},
     center=[59.9351816485413,10.780315299805943],
     zoom=18
 
